@@ -1,0 +1,36 @@
+<!DOCTYPE>
+<HTML>
+<head>
+<script>
+function palin()
+{
+var re,temp,f=0,a;
+var num=Number(document.getElementById("ta".value));
+temp=num;
+while(num>0)
+{
+  re=num%10;
+  a=re*re*re
+  num=parseInt(num/10);
+  f=f*+a;
+}
+if(f!=temp)
+{
+ window.alert("it's not amstrong");
+}
+else if(f==temp)
+{
+ window.alert("it's  amstrong");
+}
+}
+</script>
+</head>
+<body>
+<h2>check whether the given number is amstrong	 or not</h2>
+ENTER THE NUMBER:<input type="text" name="ta" id="ta"/>
+<hr color="red">
+<br>
+<center><button onClick="palin()"> enter </button>
+<h1>K.rithik <br>B18CS022</h1></center>
+</body>
+</HTML>

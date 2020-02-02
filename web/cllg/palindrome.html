@@ -1,0 +1,35 @@
+<!DOCTYPE>
+<HTML>
+<head>
+<script>
+function palin()
+{
+var re,temp,f=0;
+var num=Number(document.getElementById("ta".value));
+temp=num;
+while(num>0)
+{
+  re=num%10;
+  num=parseInt(num/10);
+  f=f*10+re;
+}
+if(f!=temp)
+{
+ window.alert("it's not palindrome");
+}
+else if(f==temp)
+{
+ window.alert("it's  palindrome");
+}
+}
+</script>
+</head>
+<body>
+<h2>check whether the given number is palindrome or not</h2>
+ENTER THE NUMBER:<input type="text" name="ta" id="ta"/>
+<hr color="red">
+<br>
+<button onClick="palin()"> enter </button>
+<h1>K.rithik<br>B18CS022</h1>
+</body>
+</HTML>

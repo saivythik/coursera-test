@@ -1,0 +1,36 @@
+<!DOCTYPE>
+<HTML>
+<head>
+<script>
+function palin()
+{
+var re,temp,f=0,i;
+var num=Number(document.getElementById("ta".value));
+for( i=1;i<num/2;i++)
+{
+	if(num%i==0)
+	{
+		f=1;
+		break;
+	}
+}
+if(f==0)
+{
+ window.alert("it's a prime");
+}
+else 
+{
+ window.alert("it's  not prime");
+}
+}
+</script>
+</head>
+<body>
+<h2>check whether the given number is prime or not</h2>
+ENTER THE NUMBER:<input type="text" name="ta" id="ta"/>
+<hr color="red">
+<br>
+<button onClick="palin()"> enter </button>
+<h1>K.RITHIK<br>B18CS022</h1>
+</body>
+</HTML>

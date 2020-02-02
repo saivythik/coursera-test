@@ -1,0 +1,26 @@
+<!DOCTYPE>
+<HTML>
+<head>
+<script>
+function palin()
+{
+var re=1,t,f=1;
+var num=Number(document.getElementById("ta".value));
+while(f!=num)
+{
+ re=re*f;
+	f++;
+}
+console.log(re);
+}
+</script>
+</head>
+<body>
+<h2>factorial of given number is </h2>
+ENTER THE NUMBER:<input type="text" name="ta" id="ta"/>
+<hr color="red">
+<br>
+<button onClick="palin()"> enter </button>
+<h1>saivythik<br>B18CS013</h1>
+</body>
+</HTML>
